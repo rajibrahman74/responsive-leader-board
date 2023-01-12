@@ -19,7 +19,8 @@ body {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -34,12 +35,11 @@ main {
  */
 
 .top-players {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .section-title {
   font-size: 24px;
-  line-height: 36px;
   color: #562eff;
   margin-bottom: 40px;
   margin-top: 03px;
@@ -68,4 +68,36 @@ main {
 
 hr {
   border: 1px solid #d1d1d1;
+  margin-bottom: 30px;
+}
+
+/*
+    Top blogs styles here,
+ */
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 27px;
+}
+
+.blog {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.blog .thumbnail img {
+  width: 177px;
+  height: 117px;
+}
+
+.blog-info .blog-title {
+  font-size: 20px;
+}
+
+.blog-info .blog-author {
+  font-weight: 400;
+  font-size: 16px;
+  color: #9f9f9f;
 }
