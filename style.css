@@ -115,6 +115,12 @@ hr {
   filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
 } */
 
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+}
+
 .course .img-bannar img {
   width: 224px;
   height: 104px;
